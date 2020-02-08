@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="/giftcard.js"></script>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="giftcardview.css">
+<title>Insert title here</title>
+<style>
+.sidenav {
+	height: 100%;
+	width: 150px; /* Set the width of the sidebar */
+	position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 50; /* Stay at the top */
+	left: 0;
+	background-color: #FEF5F5; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 50px;
+}
+
+.sidenav a {
+	padding: 20px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #A44711;
+	display: block;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.main {
+	margin-left: 160px; /* Same as the width of the sidebar */
+	padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<img src="logo.png" alt="Gift Card" class="rounded-lg" height="150">
+	
+	<nav class="navbar navbar-expand-lg navbar-light"
+		style="background-color: #FEF5F5;>
+  <a class="navbar-brand" href="LandkingPage.html">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarNav" aria-controls="navbarNav"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active"><a class="nav-link" href="LandingPage.html">Landing
+						Page<span class="sr-only">(current)</span>
+				</a></li>
+				<li class="nav-item "><a class="nav-link" href="orderpage.html"> Place
+						Gift card order</a></li>
+				<li class="nav-item"><a class="nav-link" href="giftcardview.html">View Gift
+						Card orders</a></li>
+				<li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact
+						Us</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="sidenav" >
+		<a href="LandingPage.html">Landing Page</a> <a href="orderpage.html"> Place Gift card order</a> <a
+			href="giftcardview.html">View Gift Card orders</a> <a href="ContactUs.html">Contact Us</a>
+	</div>
+	<br>
+	
+<div class="main">
+<table id="orderTable">
+  <thead>
+    <tr>
+      <th>S.NO.</th>
+      <th>Buyers Name</th>
+      <th>Shipping Address</th>
+      <th>City</th>
+      <th>Amount</th>
+      <th>Phone</th>
+     
+    </tr>
+  </thead>
+    <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Joseph</td>
+      <td>Happy Street</td>
+      <td>Chicago</td>
+      <td>74.12</td>
+      <td>9958754632</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Allice</td>
+      <td>Botanical Garden</td>
+      <td>Hamsphire</td>
+      <td>92.41</td>
+      <td>9185432972</td>
+    </tr>
+     <tr>
+      <th scope="row">3</th>
+      <td>Saurav</td>
+      <td>Rama Enclave</td>
+      <td>Gurgaon</td>
+      <td>41.11</td>
+      <td>9258746322</td>
+    </tr>
+     <tr>
+      <th scope="row">4</th>
+      <td>Rahul</td>
+      <td>Avenue First</td>
+      <td>Bihar</td>
+      <td>62.51</td>
+      <td>9135682872</td>
+    </tr>
+ 
+  <tbody id="prdData"></tbody>
+ </div>
+</table>
+</body>
+</html>
